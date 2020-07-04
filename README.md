@@ -1,3 +1,18 @@
+# WhereInTheWorld
+The tech stack involved in this project would be React
+The project is can be seen live in https://whereintheworldismycountry.netlify.app/
+
+
+
+
+
+
+## :man_in_tuxedo: Author
+[![Twitter](https://img.shields.io/badge/follow-%40HarshithVenkatesh-1DA1F2?style=flat&logo=Twitter)](https://twitter.com/harshithvenkat9) 
+
+[![LinkedIn](https://img.shields.io/badge/connect-%40HarshithVenkatesh-%230077B5?style=flat&logo=LinkedIn)](https://www.linkedin.com/in/harshith-v-7016ece/)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
