@@ -1,38 +1,288 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(#fff, rgb(252, 252, 215)); */
+}
+
+html,
+body {
+  /* background: linear-gradient(#fff, #ffa); */
+
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: linear-gradient(#fff, rgb(185, 185, 162));
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1100px;
+  /* 1100px */
+  margin: auto;
+  padding: 0 20px;
+  height: 93.8vh;
+  background: linear-gradient(#fff, rgb(185, 185, 162));
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #3fb573;
+  font-size: 1rem;
   text-align: center;
+  padding: 10px 15px;
+  border: 0;
+  margin: 10px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  /* background: linear-gradient(#fff, #fff); */
+  width: 100px;
+  margin: 5px auto 10px 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header img {
+  width: 200px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.center {
+  display: inline;
+  margin: auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+  height: 70px;
+  margin-top: 0;
 }
 
-@keyframes App-logo-spin {
+input[type='text'] {
+  background-color: rgb(218, 207, 207);
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  cursor: pointer;
+  background-color: transparent;
+  height: 150px;
+  width: 250px;
+  /* 300px */
+  perspective: 1000px;
+}
+
+.card h1 {
+  font-size: 1rem;
+  border-bottom: 0.5px #fff solid;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.card img {
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  --webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  font-size: 0.7rem;
+  background-color: rgb(229, 231, 192);
+  color: black;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.card li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.typewriter h1 {
+  margin-top: 30px;
+  font-size: 3rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 5px auto 150px auto;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 5s steps(40, end) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 70%;
+  }
+}
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+} */
+
+@media (max-width: 770px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .card {
+    cursor: pointer;
+    background-color: transparent;
+    height: 150px;
+    width: 200px;
+
+    perspective: 700px;
+  }
+
+  .card h1 {
+    font-size: 0.8rem;
+    border-bottom: 0.5px #fff solid;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  .card img {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    --webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .card-back {
+    background-color: rgb(229, 231, 192);
+    font-size: 0.6rem;
+    color: black;
+    padding: 20px;
+    transform: rotateY(180deg);
+  }
+
+  .card li {
+    list-style: none;
+    padding-bottom: 10px;
+  }
+
+  header {
+    /* background: linear-gradient(#fff, #fff); */
+    width: 200px;
+    margin: 2px auto 4px 4px;
+  }
+  header img {
+    width: 100px;
+    margin-right: 5px;
+  }
+
+  .headerh1 {
+    margin: 20px auto 50px auto;
+    word-wrap: inherit;
+  }
+
+  .center {
+    display: inline;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search {
+    height: 70px;
+    margin-top: 60px;
+  }
+  .typewriter h1 {
+    font-size: 1.4rem;
+    height: 2rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 5px 15px 5px 5px;
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 5s steps(40, end) infinite,
+      blink-caret 0.75s step-end infinite;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 75%;
+    }
+  }
+
+  input[type='text'] {
+    background-color: rgb(218, 207, 207);
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
   }
 }
