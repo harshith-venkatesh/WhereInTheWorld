@@ -163,18 +163,16 @@ input[type='text'] {
     border-color: orange;
   }
 } */
-/* work */
+
 @media (max-width: 770px) {
   .container {
-    width: 98%;
-    display: flex;
-    margin: 0 2%;
+    max-width: 700px;
+    /* 1100px */
+    margin: auto;
     padding: 0 20px;
     height: 110vh;
-
     background: linear-gradient(#fff, rgb(185, 185, 162));
   }
-
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -184,8 +182,8 @@ input[type='text'] {
   .card {
     cursor: pointer;
     background-color: transparent;
-    height: 110px;
-    width: 140px;
+    height: 130px;
+    width: 170px;
 
     perspective: 700px;
   }
@@ -198,8 +196,8 @@ input[type='text'] {
   }
 
   .card img {
-    height: 110px;
-    width: 140px;
+    height: 130px;
+    width: 170px;
     object-fit: cover;
   }
 
