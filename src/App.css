@@ -174,7 +174,7 @@ input[type='text'] {
   .card {
     cursor: pointer;
     background-color: transparent;
-    height: 150px;
+    height: 130px;
     width: 170px;
 
     perspective: 700px;
@@ -188,7 +188,7 @@ input[type='text'] {
   }
 
   .card img {
-    height: 150px;
+    height: 130px;
     width: 170px;
     object-fit: cover;
   }
