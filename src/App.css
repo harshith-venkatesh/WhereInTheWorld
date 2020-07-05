@@ -167,7 +167,7 @@ input[type='text'] {
 @media (max-width: 770px) {
   .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
   }
 
@@ -254,15 +254,15 @@ input[type='text'] {
     margin-top: 60px;
   }
   .typewriter h1 {
-    font-size: 1.4rem;
-    height: 2rem;
+    font-size: 1rem;
+    height: 1rem;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid orange; /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
     margin: 5px 15px 5px 5px;
     letter-spacing: 0.15em; /* Adjust as needed */
-    animation: typing 5s steps(40, end) infinite,
+    animation: typing 4s steps(40, end) infinite,
       blink-caret 0.75s step-end infinite;
   }
   /* The typing effect */
@@ -271,7 +271,7 @@ input[type='text'] {
       width: 0;
     }
     to {
-      width: 75%;
+      width: 70%;
     }
   }
 
