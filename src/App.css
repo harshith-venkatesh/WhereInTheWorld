@@ -171,9 +171,6 @@ input[type='text'] {
     margin: 0 2%;
     padding: 0 20px;
     height: 110vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(#fff, rgb(185, 185, 162));
   }
 
