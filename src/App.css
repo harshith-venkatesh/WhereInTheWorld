@@ -168,9 +168,9 @@ input[type='text'] {
   .container {
     max-width: 700px;
     /* 1100px */
-    margin: auto;
+    margin: 0 2%;
     padding: 0 20px;
-
+    height: 90vh;
     background: linear-gradient(#fff, rgb(185, 185, 162));
   }
 
