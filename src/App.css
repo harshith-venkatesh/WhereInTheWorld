@@ -167,15 +167,15 @@ input[type='text'] {
 @media (max-width: 770px) {
   .cards {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
   }
 
   .card {
     cursor: pointer;
     background-color: transparent;
     height: 150px;
-    width: 200px;
+    width: 170px;
 
     perspective: 700px;
   }
@@ -189,7 +189,7 @@ input[type='text'] {
 
   .card img {
     height: 150px;
-    width: 200px;
+    width: 170px;
     object-fit: cover;
   }
 
