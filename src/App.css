@@ -165,6 +165,15 @@ input[type='text'] {
 } */
 
 @media (max-width: 770px) {
+  .container {
+    max-width: 700px;
+    /* 1100px */
+    margin: auto;
+    padding: 0 20px;
+    height: 93.8vh;
+    background: linear-gradient(#fff, rgb(185, 185, 162));
+  }
+
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
